@@ -1,7 +1,4 @@
 
-int khoa = 5;
-int khoa2 = 3;
-
 int sensorValue0=0;
 int sensorValue1=0;
 int sensorValue2 =0; 
@@ -24,8 +21,7 @@ void loop(){
   
 
 void checkObstacle1(){
-
-  if(sensorValue0 == HIGH  && sensorValue1 == HIGH && sensorValue2 == HIGH){
+ if(sensorValue0 == HIGH  && sensorValue1 == HIGH && sensorValue2 == HIGH){
     n +=1;
       if (n % 2 == 0){
       Serial.println("avoid Right");
@@ -51,19 +47,7 @@ void checkObstacle1(){
     
  }
 }
-void checkObstacle2(){
-  if(sensorValue0 == HIGH  && sensorValue1 == HIGH && sensorValue2 == HIGH)
-  {
-    Serial.println("avoid Right");
-      turnRight(250);
-      delay(500);
-      forward(170);
-      delay(1000);
-      turnLeft(250);
-      delay(700);
-      forward(150);
-  }
-  }  
+  
 void checkLine(){
  sensorValue0= digitalRead(A5);
  sensorValue1= digitalRead(A4);
