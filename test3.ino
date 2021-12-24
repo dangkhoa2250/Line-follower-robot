@@ -1,4 +1,5 @@
 int khoa = 5;
+int khoa2 = 3l;
 int sensorValue0=0;
 int sensorValue1=0;
 int sensorValue2 =0; 
